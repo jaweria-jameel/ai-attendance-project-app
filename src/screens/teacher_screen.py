@@ -92,7 +92,7 @@ def teacher_dashboard():
     footer_dashboard()
 
 def teacher_tab_take_attendance():
-    teacher_id = st.session_state.teacher_data['teacher_id']
+    teacher_id = st.session_state.teacher_data['id']
     st.header('Take AI Attendance')
 
 
@@ -201,7 +201,7 @@ def teacher_tab_take_attendance():
 
 
 def teacher_tab_manage_subjects():
-    teacher_id = st.session_state.teacher_data['teacher_id']
+    teacher_id = st.session_state.teacher_data['id']
     col1, col2 = st.columns(2)
     with col1:
         st.header('Manage Subjects', width='stretch')
@@ -238,7 +238,7 @@ def teacher_tab_manage_subjects():
 def teacher_tab_attendance_records():
     st.header('Attendance Records')
 
-    teacher_id = st.session_state.teacher_data['teacher_id']
+    teacher_id = st.session_state.teacher_data['id']
 
     records = get_attendance_for_teacher(teacher_id)
 
