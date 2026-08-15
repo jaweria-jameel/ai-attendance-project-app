@@ -1,0 +1,20 @@
+streamlit
+
+# Utilities
+numpy
+pandas
+
+# Voice Recognition
+librosa
+resemblyzer
+
+# Database
+supabase
+bcrypt
+
+# Image / QR
+pillow
+segno
+
+# Machine Learning
+scikit-learn
