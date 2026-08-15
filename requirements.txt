@@ -7,6 +7,8 @@ pandas
 # Voice Recognition
 librosa
 resemblyzer
+webrtcvad
+setuptools==69.5.1
 
 # Database
 supabase
