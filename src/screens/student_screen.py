@@ -47,7 +47,6 @@ def student_dashboard():
     )
 
     with c1:
-
         header_dashboard()
 
     with c2:
@@ -284,8 +283,10 @@ def student_screen():
         "Use your registered voice to access your student account."
     )
 
+    # UPDATED: full available width
     voice_audio = st.audio_input(
-        "Record your voice"
+        "Record your voice",
+        width="stretch"
     )
 
     if voice_audio:
@@ -437,9 +438,11 @@ def student_screen():
             key="voice_register_name"
         )
 
+        # UPDATED: full available width
         registration_audio = st.audio_input(
             "Record your voice",
-            key="voice_registration_audio"
+            key="voice_registration_audio",
+            width="stretch"
         )
 
         if st.button(

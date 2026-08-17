@@ -106,6 +106,17 @@ def style_base_layout():
 
             button:hover{
                 transform :scale(1.05)}
+                        /* Audio recorder clipping fix only */
+            div[data-testid="stAudioInput"] {
+            overflow: visible !important;
+            position: relative !important;
+            width: 100% !important;
+        }
+
+        div[data-testid="stAudioInput"] > div {
+            overflow: visible !important;
+            width: 100% !important;
+        }
         </style>  
 
                 """
