@@ -350,6 +350,7 @@ def student_screen():
                             candidates,
                             threshold=0.65
                         )
+                        st.info(f"Voice similarity score: {score:.3f}")
 
                         # ---------------------------------------------
                         # STUDENT FOUND
