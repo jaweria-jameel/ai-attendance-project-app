@@ -348,7 +348,7 @@ def student_screen():
                         student_id, score = identify_speaker(
                             new_embedding,
                             candidates,
-                            threshold=0.65
+                            threshold=0.60
                         )
                         st.info(f"Voice similarity score: {score:.3f}")
 
